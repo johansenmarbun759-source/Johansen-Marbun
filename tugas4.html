@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restoran Jojo</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Google Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU+Guides&family=Poppins:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero-title {
+            font-family: 'Playwrite CU Guides', cursive;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container"> <!-- Diubah ke container biasa agar sejajar dengan isi konten di bawah -->
+
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="#">
+                KOT Restaurant
+                <small class="d-block" style="font-size: 10px;">
+                    Kingdom of Taste
+                </small>
+            </a>
+
+            <!-- Tombol ketika layar kecil -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Isi Navbar -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- UBAH me-auto MENJADI ms-auto DI SINI agar menu bergeser ke kanan dan sejajar sebelum tombol -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-3">
+
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <!-- Tutorial Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Menu
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Sea Food</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Oily Food</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Spicy Food</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Sweet Food</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Processed Food</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Profil -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profil</a>
+                    </li>
+
+                    <!-- Hubungi -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hubungi</a>
+                    </li>
+
+                </ul>
+
+                <!-- Tombol Daftar & Masuk -->
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-primary" type="button">
+                        Daftar
+                    </button>
+
+                    <button class="btn btn-primary" type="button">
+                        Masuk
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section>
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+
+                <!-- Teks Kiri -->
+                <div class="col-md-6">
+
+                    <h1 class="hero-title">
+                        Halo!!<br>
+                        Selamat Datang di Restoran Terenak di Seluruh Alam Semesta
+                    </h1>
+
+                    <p class="mt-3 mb-4 text-secondary">
+                        Makanan terenak yang pernah kamu tau ada disini. Ayo buruan pesan sekarang juga sebelum kehabisan.
+                    </p>
+
+                    <a href="#" class="btn btn-outline-info">
+                        Pesan Sekarang
+                    </a>
+
+                </div>
+
+
+                <!-- Gambar Kanan -->
+                <div class="col-md-6 d-none d-md-block text-center">
+
+                    <img
+                        src="https://png.pngtree.com/png-vector/20250910/ourmid/pngtree-restaurant-logo-with-chef-hat-and-fork-spoon-symbol-png-image_17398231.webp"
+                        alt="Gambar Restoran Terbaik"
+                        class="img-fluid"
+                        width="450">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
